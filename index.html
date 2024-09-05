@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Form  validation</title>
+</head>
+<body>
+        <form id="Loginform" onsubmit="myfunction(event)">
+         <fieldset>
+            <div>
+                <label for="name">Username</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="pass" name="pass" minlength="3">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="1" max="30">
+                <label for="email">Emai</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <button type="submit">Login</button>
+         </fieldset>
+        </form>
+        <div id="message"></div>
+        <script src="index.js"></script>
+</body>
+</html>
